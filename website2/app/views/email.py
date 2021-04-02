@@ -8,11 +8,6 @@ def emailsend(request):
     email = request.POST['email']
     subject = request.POST['sub']
     message = request.POST['message']  
-    print("=========================>>>>>>>>>>>",name1)
-    print("=========================>>>>>>>>>>>",name2)
-    print("=========================>>>>>>>>>>>",email)
-    print("=========================>>>>>>>>>>>",subject)
-    print("=========================>>>>>>>>>>>",message)
     # context={'name':name,'email':email,'subject':subject,'message':message}
     template = render_to_string('email.html')
     email = EmailMessage(
