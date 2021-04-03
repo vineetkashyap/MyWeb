@@ -4,7 +4,7 @@
 
 {% block content %}
 		<div class="main-page-wrapper">
-     {% include 'header.html' %}
+     {% include 'header3.html' %}
 
 			<!--
 			=====================================================
@@ -378,20 +378,21 @@
 					</div> <!-- /.theme-title -->
 
 					<div class="clear-fix team-member-wrapper">
-					  {%  for team in teams  %}
-					   	<div class="float-left">
+						<div class="float-left">
 							<div class="single-team-member">
 								<div class="img">
-									<img src="{{team.image.url}}" alt="Image" style="height:300px;width:400px;">
+									<img src="{% static 'images/team/2.jpg' %}" alt="Image">
 									<div class="opacity tran4s">
-										<h4>{{team.name}}</h4>
-										<span>{{team.wing}}</span>
-										<p>{{team.description|truncatechars:180}} <a href="">read more</a></p>
+										<a href="{% url 'team' %}">
+										<h4>Gonzalez Gina</h4>
+										<span>Web Developer</span>
+										<p>On the other hand, We denounce ut with righteo indignation and dislike men who are so beguiled and demoralized.</p>
+										</a>
 									</div>
 								</div> <!-- /.img -->
 								<div class="member-name">
-									<h6>{{team.name}}</h6>
-									<p>{{team.wing}}</p>
+									<h6>Gonzalez Gina</h6>
+									<p>Web Developer</p>
 									<ul>
 										<li><a href="#" class="tran3s round-border"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 										<li><a href="#" class="tran3s round-border"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
@@ -401,11 +402,60 @@
 								</div> <!-- /.member-name -->
 							</div> <!-- /.single-team-member -->
 						</div> <!-- /float-left -->
-					
-					  {% endfor %}
+
+						<div class="float-left">
+							<div class="single-team-member">
+								<div class="img">
+									<img src="{% static 'images/team/2.jpg' %}" alt="Image">
+									<div class="opacity tran4s">
+									<a href="{% url 'team' %}">
+										<h4>Holly Vincenzini</h4>
+										<span>Media Partner</span>
+										<p>On the other hand, We denounce ut with righteo indignation and dislike men who are so beguiled and demoralized.</p>
+										</a>
+									</div>
+								</div> <!-- /.img -->
+								<div class="member-name">
+									<h6>Holly Vincenzini</h6>
+									<p>Media Partner</p>
+									<ul>
+										<li><a href="#" class="tran3s round-border"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+										<li><a href="#" class="tran3s round-border"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+										<li><a href="#" class="tran3s round-border"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+										<li><a href="#" class="tran3s round-border"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+									</ul>
+								</div> <!-- /.member-name -->
+							</div> <!-- /.single-team-member -->
+						</div> <!-- /float-left -->
+
+						<div class="float-left">
+							<div class="single-team-member">
+								<div class="img">
+								<a href="{% url 'team' %}">
+									<img src="{% static 'images/team/2.jpg' %}" alt="Image">
+									<div class="opacity tran4s">
+										<h4>Ramirez Minita</h4>
+										<span>Graphic Design</span>
+										<p>On the other hand, We denounce ut with righteo indignation and dislike men who are so beguiled and demoralized.</p>
+								</a>
+									</div>
+								</div> <!-- /.img -->
+								<div class="member-name">
+									<h6>Ramirez Minita</h6>
+									<p>Graphic Design</p>
+									<ul>
+										<li><a href="#" class="tran3s round-border"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+										<li><a href="#" class="tran3s round-border"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+										<li><a href="#" class="tran3s round-border"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+										<li><a href="#" class="tran3s round-border"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+									</ul>
+								</div> <!-- /.member-name -->
+							</div> <!-- /.single-team-member -->
+						</div> <!-- /float-left -->
 					</div> <!-- /.team-member-wrapper -->
 				</div> <!-- /.conatiner -->
 			</div> <!-- /#team-section -->
+
 
 
 
@@ -655,10 +705,30 @@
 				Footer
 			=====================================================
 			-->
+			
+
+<footer  style="background:#03989E;margin-bottom:0">
+				<div class="container">
+					{% comment %} <a href="index.html" class="logo"><img src="{% static 'images/logo/scg.png' %}" alt="Logo" style="height:80px;width:200px;"></a> {% endcomment %}
+
+					{% comment %} <ul>
+						<li><a href="#" class="tran3s round-border"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="tran3s round-border"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="tran3s round-border"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="tran3s round-border"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="tran3s round-border"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="tran3s round-border"><i class="fa fa-flickr" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="tran3s round-border"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="tran3s round-border"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+					</ul> {% endcomment %}
+
+					{% comment %} <p>Copyright @ <span id="year"></span> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">SCG</a></p> {% endcomment %}
+					<h3 style="color:#ffffff">The latest SCG thought leadership</h3>
+				</div>
+			</footer>
 			{% include 'footer.html' %}
-
-
 			<!-- =============================================
+			
 				Loading Transition
 			============================================== -->
 			<div id="loader-wrapper">

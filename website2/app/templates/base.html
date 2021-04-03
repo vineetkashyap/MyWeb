@@ -16,11 +16,14 @@
 
 
 		<!-- Main style sheet -->
+		{% block linked %}{% endblock linked %}
 		<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
 		<!-- responsive style sheet -->
 		<link rel="stylesheet" type="text/css" href="{% static 'css/responsive.css' %}">
 
      <link rel="stylesheet" href="{% static 'text.css' %}">
+	 <!-- CSS only -->
+
 		<!-- Fix Internet Explorer ______________________________________-->
 
 		<!--[if lt IE 9]>
