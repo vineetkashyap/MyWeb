@@ -1,0 +1,230 @@
+ {% load static %}
+ <header class="header">
+        <!-- topbar -->
+        <div class="topbar bg-dark-blue">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6">
+                        <ul class="custom-flex left-side">
+                            <li>
+                                <select class="custom-select form-control form-control-custom mb-0">
+                                    <option>English</option>
+                                    <option>German</option>
+                                    <option>French</option>
+                                </select>
+                            </li>
+                            <li>
+                                <a href="#" class="text-custom-white">Get Job Alert <i class="fal fa-briefcase"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-8 col-sm-6">
+                        <div class="right-side">
+                            <p class="no-margin text-custom-white">Bespoke Solutions Tailored to Your Business. <a href="#" class="text-orange fw-500">Free Counsultancy</a></p>
+                            <ul class="custom-flex">
+                                <li>
+                                    <a href="#" class="text-custom-white">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-custom-white">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-custom-white">
+                                        <i class="fab fa-behance"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-custom-white">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-custom-white">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- middle sec -->
+        <div class="middle-head bg-light-white">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-6">
+                        <div class="logo">
+                            <a href="{% url 'index' %}">
+                                <img src="{% static 'assets/images/logo.png' %}" class="" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-6">
+                        <div class="right-side">
+                            <ul class="custom-flex">
+                                <li>
+                                    <a href="#" class="text-blue">
+                                        <i class="fal fa-envelope text-orange"></i>
+                                        info@heyscg.com
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-blue">
+                                        <i class="fal fa-phone text-orange"></i>
+                                        +91 91251 65305
+                                    </a>
+                                </li>
+                            </ul>
+                            <a href="contact.html" class="theme-btn btn-orange">Get A Quote <i class="fal fa-plus"></i></a>
+                        </div>
+                        <div class="hamburger-btn">
+                            <div class="menu-btn">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- navigation -->
+         <div class="navigation">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="main-nav">
+                            <nav>
+                                <ul class="custom-flex main-menu">
+                                    <li class="menu-item ">
+                                        <a href="{% url 'index' %}">OVERVIEW</a>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children">
+                                        <a href="#">INDUSTRIES</a>
+                                        <ul class="custom sub-menu">
+                                            <li class="menu-item">
+                                           
+                                            <li class="menu-item menu-item-has-children">
+                                               <a href="shop.html">Industries-1</a>
+                                               <ul class="custom sub-menu"> 
+                                                        <li class="menu-item">
+                                                            <a href="{% url 'agriculture' %}">Agriculture</a>
+                                                            <a href="{% url 'education' %}">Education</a>
+                                                            <a href="{% url 'startupbusiness' %}">Startup Business</a>
+                                                            <a href="{% url 'trainingandskill' %}">Training & Skill Developments</a>
+                                                            <a href="{% url 'itandites' %}">IT & ITes</a>
+                                                            <a href="{% url 'artificial' %}">Artificial Intelligence</a>
+                                                            <a href="{% url 'mining' %}">Mining</a>
+                                                            <a href="{% url 'transport' %}">Transport & Logistics</a>
+                                                        </li>
+                                               </ul>
+                                            </li>
+                                    </li>
+                                            <li class="menu-item">
+                                               <li class="menu-item menu-item-has-children">
+                                               <a href="shop.html">Industries-2</a>
+                                               <ul class="custom sub-menu"> 
+                                                        <li class="menu-item">
+                                                            <a href="{% url 'importandexport' %}">Import & Export</a>
+                                                            <a href="{% url 'ruraldevelopment' %}">Rural Development</a>
+                                                            <a href="{% url 'manufecturing' %}">Manufecturing</a>
+                                                            <a href="{% url 'fabrication' %}">Fabrication & Erection</a>
+                                                            <a href="{% url 'construction' %}">Construction</a>
+                                                            <a href="{% url 'waterresourses' %}">Water Resources</a>
+                                                            <a href="{% url 'wastemanagement' %}">Waste Management</a>
+                                                            <a href="{% url 'solarandelectronics' %}">Solar & Electronics</a>
+                                                        </li>
+                                               </ul>
+                                            </li>
+                                            </li>
+                                            <li class="menu-item">
+                                                <li class="menu-item menu-item-has-children">
+                                               <a href="shop.html">Industries-3</a>
+                                               <ul class="custom sub-menu"> 
+                                                        <li class="menu-item">
+                                                            <a href="{% url 'finance' %}">Finance</a>
+                                                            <a href="{% url 'ecommerce' %}">E-Commerce</a>
+                                                            <a href="{% url 'retail' %}">Retail</a>
+                                                            <a href="{% url 'goverment' %}">Goverment</a>
+                                                            <a href="{% url 'privateindustries' %}">Private Industries</a>
+                                                            <a href="{% url 'ngo' %}">NGO/Non-Profit/Trust/Society</a>
+                                                            <a href="{% url 'research' %}">Research</a>
+                                                            <a href="{% url 'survey' %}">Survey</a>
+                                                        </li>
+                                               </ul>
+                                            </li>
+                                            </li>
+                                            
+                                           
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children">
+                                        <a href="#">CAPABILITIES</a>
+                                        <ul class="custom sub-menu">
+                                            <li class="menu-item">
+                                                <a href="{% url 'itdepartment' %}">IT Department</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="{% url 'researchdepartment' %}">Research Department</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="{% url 'media' %}">Media</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="{% url 'prandclientmanagement' %}"> PR & Client Management</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                  <li class="menu-item">
+                                                <a href="{% url 'team' %}">OUR TEAM</a>
+                                            </li>
+                                    <li class="menu-item">
+                                        <a href="contact.html">JOIN US</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="{% url 'contact' %}">CONTACT</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="nav-right">
+                                <ul class="custom-flex">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fal fa-user"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fal fa-shopping-cart"></i>
+                                        </a>
+                                    </li>
+                                    <li class="search">
+                                        <a href="#">
+                                            <i class="fal fa-search"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="search-popup" id="search-popup">
+                <form action="#" class="search-form">
+                    <div class="input-group">
+                        <input type="text" name="#" class="form-control form-control-custom" placeholder="Search">
+                        <div class="input-group-prepend">
+                            <button type="submit" class="theme-btn"><i class="fal fa-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="body-overlay" id="body-overlay"></div>
+        </div> 
+    </header>
+    
