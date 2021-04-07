@@ -8,7 +8,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'ikb*k3bdcb(lak%$rc9_dkj68u*823sru6#%oo9hk$9-im-#v*'
+# SECRET_KEY = 'ikb*k3bdcb(lak%$rc9_dkj68u*823sru6#%oo9hk$9-im-#v*'
 SECRET_KEY = os.environ['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -30,7 +30,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-     'whitenoise.middleware.WhiteNoiseMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -115,6 +115,6 @@ MEDIA_URL ='/media/'
 #Extra places for collectstatic to find static files.
 STATICFILES_DIRS = (
    os.path.join(BASE_DIR, 'static'),
-)
+   )
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
