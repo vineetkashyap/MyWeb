@@ -41,4 +41,9 @@ urlpatterns = [
     path('researchdepartment/',views.researchdepartment,name="researchdepartment"),
 ###############contact#########################.
     path('contact/',views.contact,name="contact"),
+    path('about/',views.about,name="about"),
+    path('whatwedo/',views.whatwedo,name="whatwedo"),
+    path('whoweare/',views.whoweare,name="whoweare"),
+    path('whatwebelieve/',views.whatwebelieve,name="whatwebelieve"),
+
 ]

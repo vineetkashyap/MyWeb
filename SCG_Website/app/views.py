@@ -99,5 +99,18 @@ def  researchdepartment(request):
     return render(request,'capabilities/researchdepartment.html')
     
 ###############-----END CAPABILITIES-----##################
+def about(request):
+        return render(request,'about.html')
+
 def contact(request):
         return render(request,'contact.html')
+
+##############what we do##############
+def whatwedo(request):
+        return render(request,'whatwedo.html')
+
+def whoweare(request):
+        return render(request,'whoweare.html')
+
+def whatwebelieve(request):
+        return render(request,'whatwebelieve.html')
