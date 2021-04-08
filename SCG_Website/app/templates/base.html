@@ -10,6 +10,7 @@
     <meta name="description" content="#">
     <title>Hey|SCG</title>
     <!-- Fav and touch icons -->
+   
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{% static 'assets/images/favicon.ico' %}">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{% static 'assets/images/favicon.ico' %}">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{% static 'assets/images/favicon.ico' %}">
@@ -18,13 +19,13 @@
     <!-- Plugin -->
     <link href="{% static 'assets/css/plugin.css' %}" rel="stylesheet">
     <!-- Custom Stylesheet -->
-    <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/css/style2.css' %}" rel="stylesheet">
     <!-- Custom Responsive -->
-    <link href="{% static 'assets/css/responsive.css' %}" rel="stylesheet">
+    {% comment %} <link href="{% static 'assets/css/responsive.css' %}" rel="stylesheet"> {% endcomment %}
     <!-- place -->
 
 
-    
+     {% block linked %}{% endblock linked %}
 
 </head>
 <body>
@@ -53,4 +54,4 @@
     <script src="{% static 'assets/js/custom.js' %}"></script>
     <!-- /Place all Scripts Here -->
 </body>
-</html>
+</html> 

@@ -127,8 +127,7 @@ hr{
 .image-fit{
     width: 100%;
     height: 100%;
-    /* object-fit: cover; */
-    object-fit: cover ;
+    object-fit: cover;
     object-position: center;
 }
 .transform-center {
@@ -242,12 +241,7 @@ ul {
     margin-top: 0;
     margin-bottom: 0;
 }
-ul li,
-ol li {
-    margin: 0px;
-    position: relative;
-    font-size: 14px;
-}
+
 ol>li,
 ul>li{
     margin-bottom: 5px;
@@ -256,12 +250,12 @@ ul>li{
     list-style: none;
     padding-left: 15px;
 }
-ul li:before{
+/* ul li:before{
     content: "\f00c";
     font-family: Font Awesome\ 5 Pro;
     position: absolute;
     left: -15px;
-}
+} */
 ul.custom{
     list-style: none;
     padding: 0;
@@ -1594,7 +1588,7 @@ ul.profit-list li:before{
 }
 .custom-faqs .card-header .card-link.collapsed span{
     background: #fff;
-    color: #03989E;
+    color: #fe4816;
 }
 .custom-faqs .card-header .card-link:hover span{
     background-color: #03989E;
@@ -2914,7 +2908,7 @@ ul.profit-list li:before{
     padding-bottom: 120px;
 }
 .about-style-2.style-2 .about-head-text:after{
-    background-color: #03989E;
+    background-color: #ff4815
 }
 .service-slider .service-style-1.withouticon{
     margin-bottom: 5px;
@@ -3504,7 +3498,7 @@ ul.profit-list li:before{
     height: 50px;
     line-height: 50px;
     text-align: center;
-    background-color: #03989E;
+    background-color: #ef3e0d;
     color: #fff;
     transition: all 0.3s ease-out 0s;
 }
@@ -3513,7 +3507,7 @@ ul.profit-list li:before{
     color: #fff;
 }
 .sidebar .widget.categories-widget ul li a:hover span {
-    background-color: #03989E;
+    background-color: #ef3e0d;
 }
 .sidebar .widget.social-widget ul li {
     display: inline-block;
@@ -3586,7 +3580,7 @@ ul.profit-list li:before{
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 500;
-    background:#03989E;
+    background: #03989E;
     margin-right: 7px;
     margin-bottom: 10px;
     color: #fff;
@@ -4461,7 +4455,7 @@ ul.profit-list li:before{
   border-radius: 0px;
   text-align: center;
   line-height: 36px;
-  border:  #03989E solid 1px;
+  border:  #ff4815 solid 1px;
   color: #ffffff;
   background:  #03989E;
   transition-duration: 0.3s;
